@@ -2,12 +2,12 @@
 <div class="flex">
     
     <!-- Sidebar -->
-    <div class="lg:w-64 bg-blue-900 text-white min-h-screen p-4 lg:block hidden">
+    <div class="lg:w-64 bg-green-900 text-white min-h-screen p-4 lg:block hidden">
         <h2 class="text-2xl font-bold mb-6 text-center">Librarian Dashboard</h2>
         <ul>
           <!-- Dashboard Link -->
           <li class="mb-4">
-            <a routerLink="/librarian/dashboard" class="flex items-center hover:bg-blue-700 p-2 rounded ">
+            <a routerLink="/librarian/dashboard" class="flex items-center hover:bg-green-700 p-2 rounded ">
               <i class="fas fa-tachometer-alt mr-3"></i>
               Dashboard
             </a>
@@ -15,7 +15,7 @@
       
           <!-- Manage Products Link -->
           <li class="mb-4">
-            <a routerLink="/librarian/books" class="flex items-center hover:bg-blue-700 p-2 rounded ">
+            <a routerLink="/librarian/books" class="flex items-center hover:bg-green-700 p-2 rounded ">
               <i class="fas fa-cogs mr-3"></i>
               Manage Books
             </a>
@@ -23,7 +23,7 @@
       
           <!-- Sales Reports Link -->
           <li class="mb-4">
-            <a routerLink="/admin/salesreport" class="flex items-center hover:bg-blue-700 p-2 rounded">
+            <a routerLink="/admin/salesreport" class="flex items-center hover:bg-green-700 p-2 rounded">
               <i class="fas fa-chart-line mr-3"></i>
               Sales Reports
             </a>
@@ -31,7 +31,7 @@
       
           <!-- User Management Link -->
           <li class="mb-4">
-            <a routerLink="/librarian/studentmanagement" class="flex items-center hover:bg-blue-700 p-2 rounded ">
+            <a routerLink="/librarian/studentmanagement" class="flex items-center hover:bg-green-700 p-2 rounded ">
               <i class="fas fa-users mr-3"></i>
               Student Management
             </a>
@@ -39,7 +39,7 @@
       
           <!-- Logout Link -->
           <li>
-            <a routerLink="/login" class="flex items-center hover:bg-blue-700 p-2 rounded ">
+            <a routerLink="/login" class="flex items-center hover:bg-green-700 p-2 rounded ">
               <i class="fas fa-sign-out-alt mr-3"></i>
               Logout
             </a>
@@ -48,30 +48,30 @@
       </div>
       
       <!-- Mobile Sidebar -->
-      <div class="lg:hidden p-4 bg-blue-900 text-white min-h-screen fixed top-0 left-0 w-64 z-50" [ngClass]="{ 'transform -translate-x-full': !isMobileMenuOpen }">
+      <div class="lg:hidden p-4 bg-green-900 text-white min-h-screen fixed top-0 left-0 w-64 z-50" [ngClass]="{ 'transform -translate-x-full': !isMobileMenuOpen }">
         <h2 class="text-2xl font-bold mb-6 text-center">Librarian Dashboard</h2>
         <ul>
           <li class="mb-4">
-            <a routerLink="/librarian/dashboard" class="flex items-center hover:bg-blue-700 p-2 rounded ">
+            <a routerLink="/librarian/dashboard" class="flex items-center hover:bg-green-700 p-2 rounded ">
               <i class="fas fa-tachometer-alt mr-3"></i>
               Dashboard
             </a>
           </li>
           <li class="mb-4">
-            <a routerLink="/librarian/books" class="flex items-center hover:bg-blue-700 p-2 rounded ">
+            <a routerLink="/librarian/books" class="flex items-center hover:bg-green-700 p-2 rounded ">
               <i class="fas fa-cogs mr-3"></i>
               Manage Books
             </a>
           </li>
          
           <li class="mb-4">
-            <a routerLink="/librarian/studentmanagement" class="flex items-center hover:bg-blue-700 p-2 rounded ">
+            <a routerLink="/librarian/studentmanagement" class="flex items-center hover:bg-green-700 p-2 rounded ">
               <i class="fas fa-users mr-3"></i>
               Student Management
             </a>
           </li>
           <li>
-            <a routerLink="/login" class="flex items-center hover:bg-blue-700 p-2 rounded ">
+            <a routerLink="/login" class="flex items-center hover:bg-green-700 p-2 rounded ">
               <i class="fas fa-sign-out-alt mr-3"></i>
               Logout
             </a>

@@ -3,13 +3,13 @@
     <div class="flex space-x-4 mb-6">
       <button 
         class="tab-button px-4 py-2 text-lg font-semibold text-gray-700 focus:outline-none"
-        [ngClass]="{ 'border-b-2 border-blue-500': selectedTab === 1 }"
+        [ngClass]="{ 'border-b-2 border-green-500': selectedTab === 1 }"
         (click)="selectTab(1)">
         Add New Book
       </button>
       <button 
         class="tab-button px-4 py-2 text-lg font-semibold text-gray-700 focus:outline-none"
-        [ngClass]="{ 'border-b-2 border-blue-500': selectedTab === 2 }"
+        [ngClass]="{ 'border-b-2 border-green-500': selectedTab === 2 }"
         (click)="selectTab(2)">
         View Books
       </button>
@@ -32,7 +32,7 @@
                 name="id"
                 [(ngModel)]="book.id"
                 required
-                class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500"
               />
               <div *ngIf="bookForm.controls['id']?.invalid && bookForm.controls['id']?.touched" class="text-red-500 text-sm">
                 Book ID is required.
@@ -48,7 +48,7 @@
                 name="title"
                 [(ngModel)]="book.title"
                 required
-                class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500"
               />
               <div *ngIf="bookForm.controls['title']?.invalid && bookForm.controls['title']?.touched" class="text-red-500 text-sm">
                 Title is required.
@@ -64,7 +64,7 @@
                 name="author"
                 [(ngModel)]="book.author"
                 required
-                class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500"
               />
               <div *ngIf="bookForm.controls['author']?.invalid && bookForm.controls['author']?.touched" class="text-red-500 text-sm">
                 Author is required.
@@ -81,7 +81,7 @@
                 [(ngModel)]="book.isbn"
                 required
                 pattern="^\d{13}$"
-                class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500"
               />
               <div *ngIf="bookForm.controls['isbn']?.invalid && bookForm.controls['isbn']?.touched" class="text-red-500 text-sm">
                 ISBN must be a 13-digit number.
@@ -97,7 +97,7 @@
                 name="pubDate"
                 [(ngModel)]="book.pubDate"
                 required
-                class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500"
               />
               <div *ngIf="bookForm.controls['pubDate']?.invalid && bookForm.controls['pubDate']?.touched" class="text-red-500 text-sm">
                 Publication date is required.
@@ -112,7 +112,7 @@
                 name="quantity"
                 [(ngModel)]="book.quantity"
                 required
-                class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500"
               />
               <div *ngIf="bookForm.controls['quantity']?.invalid && bookForm.controls['quantity']?.touched" class="text-red-500 text-sm">
                 Quantity is required.
@@ -127,7 +127,7 @@
                 name="category"
                 [(ngModel)]="book.category"
                 required
-                class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500"
               >
                 <option value="" disabled selected>Select a category</option>
                 <option value="Fiction">Fiction</option>
@@ -145,7 +145,7 @@
             <button
               type="submit"
               [disabled]="bookForm.invalid"
-              [ngClass]="bookForm.invalid ? 'bg-gray-100 text-black' : 'bg-blue-600 text-white hover:bg-blue-700 focus:ring-2 focus:ring-blue-500'"
+              [ngClass]="bookForm.invalid ? 'bg-gray-100 text-black' : 'bg-green-600 text-white hover:bg-green-700 focus:ring-2 focus:ring-green-500'"
               class="w-full py-2 rounded-lg focus:outline-none"
             >
               Add Book
@@ -189,7 +189,7 @@
             
             <td class="py-3 px-4">
               <!-- Edit and Delete buttons -->
-              <button (click)="editProduct()" class="text-blue-500 hover:underline mr-4">Edit</button>
+              <button (click)="editProduct()" class="text-green-500 hover:underline mr-4">Edit</button>
               <button (click)="deleteProduct()" class="text-red-500 hover:underline">Delete</button>
             </td>
           </tr>
